@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em 2em;
+            background-color: #1F2937;
+            color: #F9FAF8;
+        }
+
+        header .logo {
+            font-size: 24px;
+            color: #F9FAF8;
+        }
+
+        header nav a {
+            margin-left: 1.5em;
+            color: #E5E7EB;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 2em;
+            background-color: #1F2937;
+            color: #F9FAF8;
+        }
+
+        .hero-text {
+            max-width: 50%;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 900;
+            color: #F9FAF8;
+        }
+
+        .hero p {
+            margin-top: 0.5em;
+            margin-bottom: 1em;
+            color: #E5E7EB;
+            font-size: 18px;
+        }
+
+        .hero button {
+            padding: 0.5em 1em;
+            font-size: 1em;
+            color: white;
+            background-color: #3882F6;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background-color: #2563eb;
+        }
+
+        .hero-image {
+            width: 300px;
+            height: 200px;
+            background-color: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            background-image: url('HOUSECASE.webp');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .info {
+            text-align: center;
+            padding: 2em;
+            background-color: #f9f9f9;
+        }
+
+        .info h2 {
+            font-size: 36px;
+            font-weight: 900;
+            color: #1F2937;
+            margin-bottom: 1em;
+        }
+
+        .info-cards {
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 150px;
+            height: 150px;
+            border: 2px solid #3882F6;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            color: #666;
+            padding: 1em;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+            color: #FFFFFF;
+        }
+
+        .card1 { background-image: url('house1.jpg'); }
+        .card2 { background-image: url('house2.jpg'); }
+        .card3 { background-image: url('house3.jpg'); }
+        .card4 { background-image: url('house4.webp'); }
+
+        .quote {
+            padding: 2em;
+            background-color: #E5E7EB;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .quote p {
+            font-size: 36px;
+            color: #1F2937;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        .quote .author {
+            margin-top: 1em;
+            font-weight: bold;
+        }
+
+        .cta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5em;
+            background-color: #3882F6;
+            color: white;
+        }
+
+        .cta p {
+            font-size: 18px;
+        }
+
+        .cta button {
+            padding: 0.5em 1em;
+            font-size: 1em;
+            color: #3882F6;
+            background-color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta button:hover {
+            background-color: #e0e0e0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #1F2937;
+            color: #F9FAF8;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">HOUSECASE</div>
+        <nav>
+            <a href="#">BUY OR RENT </a>
+            <a href="#">PRICE RANGE </a>
+            <a href="#">HOME TYPE </a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1> HOUSECASE </h1>
+            <p>Making realty a reality.</p>
+            <button>Sign up</button>
+        </div>
+        <div class="hero-image"></div>
+    </section>
+
+    <section class="info">
+        <h2>BEST SELLING HOUSES.</h2>
+        <div class="info-cards">
+            <div class="card card1">Beautiful modern house with 7 rooms and a outdoor pool.</div>
+            <div class="card card2">Luxury Home Exteriror. The rear facade of a luxury home</div>
+            <div class="card card3">A huge new luxury home at sunset</div>
+            <div class="card card4">A luxury villa with swimming pool</div>
+        </div>
+    </section>
+
+    <section class="quote">
+        <p>Buy or Rent luxury houses at afford prices, live a luxurious life with us.</p>
+        <div class="author">-HOUSECASE Rwanda</div>
+    </section>
+
+    <section class="cta">
+        <p>Call to action! It's time! Sign up for our luxurious houses by clicking that button right over there!</p>
+        <button>Sign up</button>
+    </section>
+
+    <footer>
+        Copyright © The HOUSECASE Project 2024
+    </footer>
+
+</body>
+</html>
